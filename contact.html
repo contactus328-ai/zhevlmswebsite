@@ -1,50 +1,108 @@
-<form
-  action="mailto:zheveducation@gmail.com"
-  method="post"
-  enctype="text/plain"
-  class="bg-white p-10 rounded-2xl shadow space-y-6">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Book an LMS Consultation | Zhev LMS</title>
 
-  <h2 class="text-3xl font-bold text-center mb-6">
-    Talk to an LMS Expert
-  </h2>
+<meta name="description" content="Speak to an LMS expert at Zhev LMS. Get guidance on LMS implementation, training, and deployment.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- NAME -->
-  <input
-    type="text"
-    name="Name"
-    placeholder="Full Name"
-    required
-    class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
-  >
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- PHONE -->
-  <input
-    type="tel"
-    name="Phone"
-    placeholder="Phone / WhatsApp Number"
-    required
-    class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
-  >
+<style>
+  html { scroll-behavior: smooth; }
+</style>
+</head>
 
-  <!-- ORGANIZATION -->
-  <input
-    type="text"
-    name="Organization"
-    placeholder="Organization Name"
-    required
-    class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
-  >
+<body class="text-gray-800 bg-white">
 
-  <!-- SUBMIT -->
-  <button
-    type="submit"
-    class="w-full bg-indigo-600 text-white py-4 rounded-xl text-lg font-bold hover:bg-indigo-700 transition">
-    Request Consultation
-  </button>
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <span class="text-2xl font-extrabold text-indigo-600 tracking-wide">
+      Zhev LMS
+    </span>
+    <nav class="space-x-6 hidden md:block font-medium">
+      <a href="lms-solutions.html" class="hover:text-indigo-600">Solutions</a>
+      <a href="why-zh.html" class="hover:text-indigo-600">Why Zhev</a>
+      <a href="resources.html" class="hover:text-indigo-600">Resources</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- TRUST MICRO COPY -->
-  <p class="text-sm text-gray-500 text-center">
-    No spam. Your information stays confidential.
-  </p>
+<!-- HERO -->
+<section class="bg-gradient-to-br from-purple-700 to-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-28 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-8">
+      Talk to an LMS Expert
+    </h1>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto text-purple-100">
+      Get expert guidance on implementing a secure, scalable LMS for your organization.
+    </p>
+  </div>
+</section>
 
-</form>
+<!-- FORM SECTION -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <form
+      action="https://formsubmit.co/zheveducation@gmail.com"
+      method="POST"
+      class="bg-white p-10 rounded-2xl shadow-xl space-y-6"
+    >
+
+      <!-- REQUIRED FIELDS -->
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+      >
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone / WhatsApp Number"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+      >
+
+      <input
+        type="text"
+        name="organization"
+        placeholder="Organization Name"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+      >
+
+      <!-- HIDDEN SETTINGS -->
+      <input type="hidden" name="_subject" value="New LMS Enquiry - Zhev LMS">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- SUBMIT -->
+      <button
+        type="submit"
+        class="w-full bg-indigo-600 text-white py-4 rounded-xl text-lg font-bold hover:bg-indigo-700 transition"
+      >
+        Request Consultation
+      </button>
+
+      <p class="text-sm text-gray-500 text-center">
+        No spam. Your details are kept confidential.
+      </p>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-gray-400 py-10 text-center">
+  <p>© 2026 Zhev LMS. Enterprise Learning Solutions.</p>
+</footer>
+
+</body>
+</html>
