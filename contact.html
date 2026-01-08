@@ -1,48 +1,50 @@
-<form 
+<form
   action="mailto:zheveducation@gmail.com"
-  method="POST"
+  method="post"
   enctype="text/plain"
-  class="bg-white p-10 rounded-2xl shadow space-y-6"
->
+  class="bg-white p-10 rounded-2xl shadow space-y-6">
 
-  <input 
-    type="text" 
+  <h2 class="text-3xl font-bold text-center mb-6">
+    Talk to an LMS Expert
+  </h2>
+
+  <!-- NAME -->
+  <input
+    type="text"
     name="Name"
-    class="w-full border p-4 rounded" 
-    placeholder="Full Name" 
+    placeholder="Full Name"
     required
+    class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
   >
 
-  <input 
-    type="email" 
-    name="Email"
-    class="w-full border p-4 rounded" 
-    placeholder="Work Email" 
+  <!-- PHONE -->
+  <input
+    type="tel"
+    name="Phone"
+    placeholder="Phone / WhatsApp Number"
     required
+    class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
   >
 
-  <input 
-    type="text" 
+  <!-- ORGANIZATION -->
+  <input
+    type="text"
     name="Organization"
-    class="w-full border p-4 rounded" 
     placeholder="Organization Name"
+    required
+    class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
   >
 
-  <input 
-    type="hidden" 
-    name="Source"
-    value="Zhev LMS Website"
-  >
-
-  <button 
+  <!-- SUBMIT -->
+  <button
     type="submit"
-    class="w-full bg-indigo-600 text-white py-4 rounded-xl font-semibold hover:bg-indigo-700 transition"
-  >
+    class="w-full bg-indigo-600 text-white py-4 rounded-xl text-lg font-bold hover:bg-indigo-700 transition">
     Request Consultation
   </button>
 
-  <p class="text-xs text-gray-500 text-center">
-    Your details will be emailed to our team. No spam.
+  <!-- TRUST MICRO COPY -->
+  <p class="text-sm text-gray-500 text-center">
+    No spam. Your information stays confidential.
   </p>
 
 </form>
